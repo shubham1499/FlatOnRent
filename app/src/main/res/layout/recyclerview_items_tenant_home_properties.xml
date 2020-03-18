@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/myCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        app:cardElevation="3dp"
+        android:layout_margin="4dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="3.5"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/flatimage"
+                android:layout_width="405dp"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/background"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="2"
+                android:layout_weight="1.5"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:id="@+id/tvuid">
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/tvbhk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/flatimage"
+                        android:text="Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/tvarea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tvbhk"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/flatimage"
+                        android:text="13.3 Inch, 256 GB"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+                    <TextView
+                        android:id="@+id/tvtenants"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/flatimage"
+                        android:layout_below="@id/tvarea"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                        android:text="tenants">
+                    </TextView>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".7"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs.3000"
+                        android:textSize="25sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/tvrent"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="wrap_content"-->
+    <!--    android:orientation="vertical">-->
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_margin="5dp">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:padding="8dp">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/flatimage"-->
+    <!--                android:layout_width="120dp"-->
+    <!--                android:layout_height="90dp"-->
+    <!--                android:padding="4dp"-->
+    <!--                android:background="@drawable/logo"/>-->
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:visibility="gone"-->
+    <!--                android:id="@+id/tvuid">-->
+
+    <!--            </TextView>-->
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvbhk"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="5dp"-->
+    <!--                android:layout_toRightOf="@id/flatimage"-->
+    <!--                android:text="Apple MacBook Air Core i5 5th Gen - (8 GB/128 GB SSD/Mac OS Sierra)"-->
+    <!--                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"-->
+    <!--                android:textColor="#000000" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvarea"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_below="@id/tvbhk"-->
+    <!--                android:layout_marginLeft="5dp"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                android:layout_toRightOf="@id/flatimage"-->
+    <!--                android:text="13.3 Inch, 256 GB"-->
+    <!--                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvtenants"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_below="@id/tvarea"-->
+    <!--                android:layout_marginLeft="5dp"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                android:layout_toRightOf="@id/flatimage"-->
+    <!--                android:background="@color/colorPrimary"-->
+    <!--                android:paddingLeft="15dp"-->
+    <!--                android:paddingRight="15dp"-->
+    <!--                android:text="4.7"-->
+    <!--                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/tvrent"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_below="@id/tvtenants"-->
+    <!--                android:layout_marginLeft="5dp"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                android:layout_toRightOf="@id/flatimage"-->
+    <!--                android:text="INR 56990"-->
+    <!--                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"-->
+    <!--                android:textStyle="bold" />-->
+
+    <!--        </RelativeLayout>-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+    <!--</LinearLayout>-->
+
+
+
+
+    <!--    &lt;!&ndash;<?xml version="1.0" encoding="utf-8"?>&ndash;&gt;-->
+    <!--    &lt;!&ndash;<androidx.cardview.widget.CardView&ndash;&gt;-->
+    <!--    &lt;!&ndash;    xmlns:android="http://schemas.android.com/apk/res/android"&ndash;&gt;-->
+    <!--    &lt;!&ndash;    xmlns:card_view="http://schemas.android.com/apk/res-auto"&ndash;&gt;-->
+    <!--    &lt;!&ndash;    android:id="@+id/cardview1"&ndash;&gt;-->
+    <!--    &lt;!&ndash;    android:layout_width="fill_parent"&ndash;&gt;-->
+    <!--    &lt;!&ndash;    android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;    card_view:cardElevation="5dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;    card_view:contentPadding="5dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;    card_view:cardCornerRadius="5dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;    card_view:cardMaxElevation="5dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;    >&ndash;&gt;-->
+    <!--    &lt;!&ndash;    <RelativeLayout&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:background="#ECEFF1"&ndash;&gt;-->
+    <!--    &lt;!&ndash;        android:padding="10dp">&ndash;&gt;-->
+
+
+    <!--    &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:id="@+id/StudentName"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:text="Student Name: "&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:textColor="#000"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:textSize="20dp" />&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:id="@+id/ShowStudentNameTextView"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:text="Show Student Name"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:textColor="#000"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:textSize="20dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_alignParentTop="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_toRightOf="@+id/StudentName"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_toEndOf="@+id/StudentName"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_marginLeft="19dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_marginStart="19dp" />&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:id="@+id/StudentNumber"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:text="Phone Number: "&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:textColor="#000"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:textSize="20dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_below="@+id/StudentName"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_alignParentLeft="true"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_alignParentStart="true" />&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;        <TextView&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:id="@+id/ShowStudentNumberTextView"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:gravity="center"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:text="Show Number"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:textColor="#000"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:textSize="20dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_marginLeft="11dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_marginStart="11dp"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_below="@+id/ShowStudentNameTextView"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_toRightOf="@+id/StudentNumber"&ndash;&gt;-->
+    <!--    &lt;!&ndash;            android:layout_toEndOf="@+id/StudentNumber" />&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;    </RelativeLayout>&ndash;&gt;-->
+
+    <!--    &lt;!&ndash;</androidx.cardview.widget.CardView>&ndash;&gt;-->

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".ownerclasses.signinsignup.loginPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            >
+
+
+            <ImageView
+                android:id="@+id/ivLogLogo"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="18dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/ivSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginBottom="15dp"
+                android:contentDescription="Sign in text on registration activity"
+                android:src="@drawable/joinus_text" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_rect"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/spinner2"
+                android:textColor="@color/white"
+                android:popupBackground="@color/white">
+            </Spinner>
+
+            <EditText
+                android:id="@+id/txtcity"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/city2"
+                android:drawableStart="@drawable/city2"
+                android:drawablePadding="5dp"
+
+                android:hint="City"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/txtemail"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/icon_person"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/icon_person"
+                android:hint="@string/emailReg"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/txtpassword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/icon_password"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/icon_password"
+                android:hint="@string/passwordReg"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/txtconpassword"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_rect"
+                android:drawableLeft="@drawable/icon_password"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/icon_password"
+                android:hint="@string/confirmPassword"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/registernewuser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btnsignin_gradient"
+                android:onClick="gotoLoginPage"
+                android:text="@string/sign_upReg"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

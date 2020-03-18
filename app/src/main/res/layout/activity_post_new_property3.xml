@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ownerclasses.postingNewProperty.postNewProperty3"
+    android:background="#273444">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <View
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="35dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="#FFF"
+            android:text="1"
+            android:background="@drawable/btnsignin_gradient"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="#FFF"
+            android:text="2"
+            android:background="@drawable/btnsignin_gradient"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="#FFF"
+            android:text="3"
+            android:background="@drawable/btnsignin_gradient"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/layoutStatus"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="#609FE6"
+            android:text="Flat No."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txtflatno"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="#609FE6"
+            android:text="Floor"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/txtfloor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+
+            android:layout_marginTop="16dp"
+            android:textColor="#609FE6"
+            android:text="Apartment Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/txtaptname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:inputType="text"
+            android:padding="10dp" />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="#609FE6"
+            android:text="Apartment No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:inputType="number"/>
+
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/txtaptno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="#609FE6"
+            android:text="Area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/txtarea"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="#609FE6"
+            android:text="City"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/txtcity"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="#609FE6"
+            android:text="State"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/txtstate"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="#609FE6"
+            android:text="Landmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:textColor="@color/white"
+            android:id="@+id/txtLandmark"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"/>
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="#609FE6"
+            android:text="Upload Flat Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvflatimage"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/border"
+            android:layout_marginTop="5dp"
+            android:padding="50dp"
+            android:id="@+id/imageofflat">
+
+        </ImageView>
+        <Button
+            android:id="@+id/btnContinue3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btnsignin_gradient"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

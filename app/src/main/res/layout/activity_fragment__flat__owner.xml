@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:background="@mipmap/background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:text="BHK"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/bhk"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="none"
+                android:editable="false"
+                android:background="@drawable/rounded_rect"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:text="Floor"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/floor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:inputType="none"
+                android:editable="false"
+                android:background="@drawable/rounded_rect"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:text="Furnished"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/furnished"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="none"
+                android:editable="false"
+                android:background="@drawable/rounded_rect"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:text="Parking"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/parking"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="none"
+                android:editable="false"
+                android:background="@drawable/rounded_rect"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:text="Lift"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/lift"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:background="@drawable/rounded_rect"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+                android:editable="false"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:text="For"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/tenant"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:background="@drawable/rounded_rect"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="10dp"
+                android:inputType="none"
+                android:editable="false"/>
+            <Button
+                android:id="@+id/btnDeleteProperty"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Delete This Property"
+                android:background="@drawable/btnsignin_gradient"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="10dp">
+            </Button>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:layout_margin="15dp"-->
+<!--   android:background="@drawable/background"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/bhk"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="BHK"-->
+<!--        android:textSize="18sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/floor"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Floor"-->
+<!--        android:textSize="18sp"-->
+<!--        android:layout_marginTop="10dp"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/furnished"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Furnished"-->
+<!--        android:textSize="18sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/parking"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Parking"-->
+<!--        android:textSize="18sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/lift"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Lift"-->
+<!--        android:textSize="18sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/tenant"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Tenant"-->
+<!--        android:textSize="18sp" />-->
+<!--</LinearLayout>-->

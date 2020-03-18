@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#273444">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/btnsignin_gradient"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/layoutStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="#FFF"
+            android:text="1"
+            android:background="@drawable/btnsignin_gradient"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimary"
+            android:text="2"
+            android:background="@drawable/rectangle_non"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimary"
+            android:text="3"
+            android:background="@drawable/rectangle_non"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/layoutStatus"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="#609FE6"
+            android:text="BHK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/txtbhk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/border"
+            android:hint="Enter BHK"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="#609FE6"
+            android:text="Furnished"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/txtvfurnished" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <CheckBox
+                android:layout_marginLeft="5dp"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Yes"
+                android:id="@+id/furnitureIdYes"
+                android:textColor="@color/whiteTextColor">
+            </CheckBox>
+
+            <CheckBox
+                android:layout_toRightOf="@+id/furnitureIdYes"
+                android:layout_marginLeft="10dp"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="No"
+                android:id="@+id/furnitureIdNo"
+                android:textColor="@color/whiteTextColor">
+            </CheckBox>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtvlift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Lift Available"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="#609FE6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <CheckBox
+                android:layout_marginLeft="5dp"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Yes"
+                android:id="@+id/liftIdYes"
+                android:textColor="@color/whiteTextColor">
+            </CheckBox>
+
+            <CheckBox
+                android:layout_toRightOf="@+id/liftIdYes"
+                android:layout_marginLeft="10dp"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="No"
+                android:id="@+id/liftIdNo"
+                android:textColor="@color/whiteTextColor">
+            </CheckBox>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtvparking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Parking Available"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textColor="#609FE6" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <CheckBox
+                android:layout_marginLeft="5dp"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="Yes"
+                android:id="@+id/parkingIdYes"
+                android:textColor="@color/whiteTextColor">
+            </CheckBox>
+
+            <CheckBox
+                android:layout_toRightOf="@+id/parkingIdYes"
+                android:layout_marginLeft="10dp"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:text="No"
+                android:id="@+id/parkingIdNo"
+                android:textColor="@color/whiteTextColor">
+            </CheckBox>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnContinue2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btnsignin_gradient"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"/>
+</RelativeLayout>

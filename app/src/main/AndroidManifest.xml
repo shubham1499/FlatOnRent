@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.flatonrent">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ownerclasses.signinsignup.forgot_password"></activity>
+        <activity android:name=".tenantclasses.tenantViewPageAdapter.FragmentAddressTenant" />
+        <activity android:name=".tenantclasses.tenantViewPageAdapter.FragmentRentTenant" />
+        <activity android:name=".tenantclasses.tenantViewPageAdapter.FragmentFlatTenant" />
+        <activity android:name=".tenantclasses.tenant_after_clicking_property_fromhome1.tenant_after_clicking_property_from_thome1" />
+        <activity android:name=".ownerclasses.ownerViewPageAdapter.FragmentAddressOwner" />
+        <activity android:name=".ownerclasses.ownerViewPageAdapter.FragmentRentOwner" />
+        <activity android:name=".ownerclasses.ownerViewPageAdapter.Fragment_Flat_Owner" />
+        <activity android:name=".ownerclasses.myProperty.owner_after_clicking_hisproperty" />
+        <activity android:name=".tenantclasses.tpropertyselectedfromhome.tproperty_selected_from_thome" />
+        <activity android:name=".ownerclasses.notification.owner_notification_afterclicking_tenant" />
+        <activity android:name=".tenantclasses.tnotifications.tenant_notification" />
+        <activity android:name=".tenantclasses.tdashboard1.tenant_dashboard" />
+        <activity android:name=".tenantclasses.tprofile1.tenant_profile" />
+        <activity android:name=".tenantclasses.main_home_tenant" />
+        <activity android:name=".tenantclasses.thome1.thome_1" />
+        <activity android:name=".tenantclasses.thom1.t_home1.t_home1" />
+        <activity android:name=".ownerclasses.myProperty.myProperties" />
+        <activity android:name=".ownerclasses.postingNewProperty.postNewProperty3" />
+        <activity android:name=".ownerclasses.postingNewProperty.postNewProperty2" />
+        <activity android:name=".ownerclasses.postingNewProperty.postNewProperty1" />
+        <activity android:name=".ownerclasses.openingactivity.OPENING">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ownerclasses.signinsignup.loginPage" />
+        <activity android:name=".ownerclasses.signinsignup.registerPage" />
+        <activity android:name=".ownerclasses.main_home_owner" />
+    </application>
+
+</manifest>

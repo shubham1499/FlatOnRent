@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:background="@mipmap/background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:text="Flat no."
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/flatno"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="none"
+                android:editable="false"
+                android:background="@drawable/rounded_rect"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:text="Apartment Name"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/apartmentname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="none"
+                android:editable="false"
+                android:background="@drawable/rounded_rect"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:text="Apartment No."
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/apartmentno"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:inputType="none"
+                android:editable="false"
+                android:background="@drawable/rounded_rect"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                android:textColorHint="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:text="Flat Address"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                />
+            <EditText
+                android:id="@+id/flataddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="none"
+                android:editable="false"
+                android:background="@drawable/rounded_rect"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:text="Area"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/area"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="none"
+                android:editable="false"
+                android:background="@drawable/rounded_rect"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:text="Landmark"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/landmark"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:background="@drawable/rounded_rect"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+
+                android:editable="false"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="3dp"
+                android:text="City"
+                android:textColor="@color/white"
+                />
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:background="@drawable/rounded_rect"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textColorHint="@color/white"
+                android:layout_marginBottom="10dp"
+                android:inputType="none"
+                android:editable="false"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:layout_margin="15dp"-->
+    <!--   android:background="@drawable/background"-->
+    <!--    android:orientation="vertical">-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/bhk"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="BHK"-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/floor"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Floor"-->
+    <!--        android:textSize="18sp"-->
+    <!--        android:layout_marginTop="10dp"/>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/furnished"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Furnished"-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/parking"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Parking"-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/lift"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Lift"-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/tenant"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Tenant"-->
+    <!--        android:textSize="18sp" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:layout_marginLeft="15dp"-->
+    <!--    android:gravity="center"-->
+    <!--    android:orientation="vertical">-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/flatno"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Flat no."-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/apartmentname"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Apartment Name"-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/apartmentno"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Apartment no."-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/flataddress"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="FlatAddress"-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/area"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Area"-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/landmark"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Landmark"-->
+    <!--        android:textSize="18sp" />-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/city"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="CIty"-->
+    <!--        android:textSize="18sp" />-->
+    <!--</LinearLayout>-->
